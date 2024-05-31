@@ -16,7 +16,7 @@
     <div class="container">
         <div class="registration-form">
             <h2>Registo de Utilizadores</h2>
-            <form action="process_register.php" method="post">
+            <form action="../controllers/process_register.php" method="post">
                 <div class="form-group">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" required>
