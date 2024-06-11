@@ -148,7 +148,162 @@ li a:hover:not(.active) {
 background-color: #ddd;
 }
 
+li a.active {html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+header {
+    color: white;
+    text-align: center;
+    flex-shrink: 0;
+    height: auto;
+
+}
+main {
+    background-color: #f4f4f4;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container-form {
+    display: flex;
+    height: 100%;
+    min-height: 750px;
+}
+.left {
+    min-height: 750px;
+    height: 100%;
+    margin: 30px;
+    width: 35%;
+    display: flex;
+    flex-direction: column; /* Para que os elementos sejam empilhados verticalmente */
+    justify-content: center; /* Centraliza os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+}
+.left
+input[type=text],
+input[type=password],
+input[type=date],
+input[type=email]
+{
+    width: 95%;
+    padding: 5px 5px;
+    margin: 10px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    font-size: 20px;  /* Aumentado o tamanho da fonte */
+}
+.left label
+{
+    width: 95%;
+    padding: 5px 5px;
+    box-sizing: border-box;
+    margin: 10px;
+    margin-bottom: 5px;
+}
+.left h2
+{
+    margin-top: 20px;
+}
+.btnfdd {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnfdd:hover {
+    background-color: #039f5b;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .left {
+        width: 100%; /* Largura total para telas pequenas */
+    }
+
+    .right {
+        display: none; /* Esconde a div direita em telas pequenas */
+    }
+
+    .left {
+        margin-bottom: 20px; /* Espaçamento inferior para separar as divs */
+    }
+}
+
+.right {
+    width: 65%;
+    background-image: url('../Img/back.jpg'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a área da div */
+    background-position: center;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+background-color: #ddd;
+}
+
 li a.active {
+color: white;
+background-color: #04AA6D;
+}
+
+
 color: white;
 background-color: #04AA6D;
 }

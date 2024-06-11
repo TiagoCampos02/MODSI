@@ -1,13 +1,31 @@
 <?php include 'includes/header.php'; ?>
 
-<!-- Conteúdo da página inicial -->
-<!-- <div class="container">
-    <h1>Bem-vindo ao Nosso Ginásio</h1>
-    <p>Descubra o poder da boa forma conosco!</p>
-</div> -->
-<div class="body-text">
-  <div class="title">Ginásio dos Rijos</div>
-  <div class="sub-title">e dos franguinhos</div>
-</div>
+<!-- <main>
+  <div class="container">
+    <div class="conteudo">
 
+    </div>
+  </div>
+</main> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registo</title>
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+      .main-content {
+          background-image: url('Img/inicio.png'); /* Caminho para a imagem de fundo */
+          background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+          background-position: center; /* Centraliza a imagem */
+          background-repeat: no-repeat; /* Evita a repetição da imagem */
+          color: #fff; /* Cor do texto para melhor contraste com a imagem de fundo */
+      }
+    </style>
+</head>
+<body>
+<div class="main-content">
+</div>
+</body>
+</html>
 <?php include 'includes/footer.php'; ?>

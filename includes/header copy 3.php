@@ -95,40 +95,28 @@
                 session_start();
                 if (isset($_SESSION['user_id'])) {
                     // Usuário está logado                    
+                    // Verifica o role_id para adicionar links específicos
                     if ($_SESSION['role_id'] == 5) {
                         // Exemplo de links para Clientes
-                        echo '<li class="dropdown">
-                                <a href="javascript:void(0)">Options</a>
-                                <div class="dropdown-content">
-                                    <a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/Horario/ConsultaHorario.php">Consultar Horário de Aulas</a>
-                                    <a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/user/ConsultarPlanoTreino.php">Consultar Plano de Treino</a>
-                                    <a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/user/ConsultarPlanoAlimentar.php">Consultar Plano de Nutrição</a>
-                                </div>
-                              </li>';
+                        echo '<li><a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/admin/dashboard.php">Admin Dashboard</a></li>';
                     } elseif ($_SESSION['role_id'] == 3) {
                         // Exemplo de links para Personal Trainer
-                        echo '<li><a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/Horario/ConsultaHorario.php">Consultar Horário de Aulas</a></li>';
                         echo '<li><a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/PersonalTrainer/meusAlunos.php">Meus Alunos</a></li>';
                     } elseif ($_SESSION['role_id'] == 4) {
                         // Exemplo de links para Nutricionista
-                        echo '<li><a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/Horario/ConsultaHorario.php">Consultar Horário de Aulas</a></li>';
                         echo '<li><a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/Nutricionista/meusClientes.php">Meus Clientes</a></li>';
-
                     } elseif ($_SESSION['role_id'] == 2) {
                         // Exemplo de links para Funcionários
-                        echo '<li><a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/Horario/ConsultaHorario.php">Consultar Horário de Aulas</a></li>';
-                        echo '<li><a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/Funcionario/Associar.php">Associar Staff</a></li>';
+                        echo '<li><a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/user/profile.php">Profile</a></li>';
                     } elseif ($_SESSION['role_id'] == 1) {
                         // Exemplo de links para Administradores
                         echo '<li class="dropdown">
                                 <a href="javascript:void(0)">Admin</a>
                                 <div class="dropdown-content">
-                                    <a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/Horario/ConsultaHorario.php">Consultar Horário de Aulas</a>
-                                    <a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/Horario/horario.php">Alterar Horário de Aulas</a>
                                     <a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/Funcionario/Associar.php">Associar Staff</a>
-                                    <a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/Administrador/CriarFuncionario.php">Criar Staff</a>
-                                    <a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/ManageClients.php">Gerir Clientes</a>
-                                    <a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/Administrador/ManageStaff.php">Gerir Staff</a>
+                                    <a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/Administrador/CriarFuncionario.php">Criar Funcionários</a>
+                                    <a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/ManageClients.php">Manage Clients</a>
+                                    <a href="http://ave.dee.isep.ipp.pt/~1201049/Final/pages/Administrador/ManageStaff.php">Manage Staff</a>
                                 </div>
                               </li>';
                     }

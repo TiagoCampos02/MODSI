@@ -1,0 +1,128 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    color: white;
+    text-align: center;
+    flex-shrink: 0;
+    height: auto;
+
+}
+main {
+    background-color: #f4f4f4;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    flex-shrink: 0;
+}
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+.container-form {
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left, .right {
+    flex: 1;
+    margin: 10px;
+}
+
+.left {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 90vh; /* Ajusta conforme necessário */
+    overflow-y: auto; /* Adiciona barra de rolagem se necessário */
+}
+
+.right {
+    display: none; /* Pode ser configurado conforme necessário */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input {
+    margin-bottom: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btnfdd {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnfdd:hover {
+    background-color: #0056b3;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+background-color: #ddd;
+}
+
+li a.active {
+color: white;
+background-color: #04AA6D;
+}
